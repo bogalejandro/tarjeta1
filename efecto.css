@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tilt+Neon&family=Tilt+Warp&family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+
+body{background-color: #1F2124;
+    /*fondo de mi pagina */
+font-family: 'Orbitron', sans-serif;;
+/*fuente usada*/
+}
+
+.textoF{
+margin-top: -300px;
+text-align: center;
+font-size: 20px;
+}
+
+.imagenAmanda{
+width: 90%;
+height: 55%;
+border-radius: 30px;
+text-align: center;
+mar
+}
+
+.telefono{
+
+    color:darkslateblue;
+    margin-top: -50px;
+    font-size: 10px;
+    text-align: center;
+    
+}
+.redSocial{color: darkslateblue;
+    margin-top: -320px;
+    font-size: 10px;
+text-align: center;}
+
+.texto{color: #fff;margin-left: 55%; margin-top: 75%;font-size: 12px;}
+/*ajusto un texto firma */
+/*declaro el estilo de la carta */
+.carta{
+position: absolute;/*posicion manejable*/
+top: 50%; /*desplazo mi objeto carta al 50$ hacia abajo de la pantalla*/
+left: 50%;/*desplazo mi objeto carta al 50% hacia la izquiera de mi pantalla*/
+width: 300px;/*mi espacio horizontar en el objeto carta para dibujar*/
+height: 300px;/*mi espacio vertical en el objeto para dibujar*/
+margin: -150px;/*ubico mi objeto en la pantalla correctamente*/
+float: left;/*alinea mis elementos*/
+
+}
+
+.contenido{
+
+position: absolute;/*posicionar elemento de contenido de textos en este caso */
+width: 100%; /*ajusto el espacio de trabajo*/
+height: 100%; /*ajusto el espacio de trabajo*/
+box-shadow: 0 0 15px rgba(253, 253, 253, 0.3); /*doy una sombra a mi objeto */
+
+transition: transform 1s;/*me va ayudar a cambiar mi objeto de cara*/
+transform-style: preserve-3d;/*va preservar mi movimiento en 3d para mostrar la parte de atras*/
+
+
+
+}
+
+.carta:hover .contenido {/*mientras paso mi mouse */
+
+    transform: rotateY(180deg);/*va rotar 180grados en y */
+    transition: transform 1.4s;/*TIEMPO DE TRANSICION */
+}
+
+.frente,
+.detras{/*PARA ESTAS DOS CLASES */
+
+    position: absolute;/*posiciono mi objeto */
+    height: 100%;/*ajusto mi espacio de trabajo */
+    width: 100%;/*ajusto mi espacio de trabajo */
+background: white; /*le doy un color defondo*/
+line-height: 300px;/*ajusto las lineas de texto*/
+border-radius: 10px;/*efecto de borde circular */
+backface-visibility: hidden;/*efecto de espejo para las letras*/
+
+
+}
+.detras{/*en laparte de atras*/
+    background-color: blueviolet;/*cambia un color a violet*/
+    transform: rotateY(180deg);/*y tambien rota su contenido 180grados*/
+color: #fff;/*cambia el color de mis letras*/
+
+}
+
